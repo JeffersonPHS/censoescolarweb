@@ -1,0 +1,12 @@
+Container {
+  width: 70%;
+  align-items: center;
+ 
+ 
+}
+
+.carousel-img {
+  width: 100%;
+  min-height: 180px;
+  max-height: 360px;
+}
