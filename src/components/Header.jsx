@@ -2,13 +2,14 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { IoSchoolOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Header.css'
 
 
 
 function Header() {
   return (
-    <header style={{ marginBottom: '10px'}}>
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <header className='Estilizar' style={{ marginBottom: '10px'}}>
+     <nav class="navbar navbar-expand-lg " >
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Instituiçao</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

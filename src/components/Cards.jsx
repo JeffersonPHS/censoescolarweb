@@ -1,5 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import dados from '../datasets/resultado_pb.json'
+import './Cards.css'
+import { Container } from 'react-bootstrap';
 
 function Cards() {
 
@@ -8,12 +10,11 @@ dados.sort((primeiro, segundo) => segundo.qt_mat_bas - primeiro.qt_mat_bas)
 
   return (
 
-    <div>
-        <h1>Top 3 Instituiçao </h1>
+   <Container className="ContainerCards">
 
-        {dados.slice(0,3).map((item) => (
+     {dados.slice(0,3).map((item) => (
 
-       <Card style={{ width: '18rem' }}>
+       <Card className='Cards'>
 
       <Card.Body>
 
@@ -22,14 +23,22 @@ dados.sort((primeiro, segundo) => segundo.qt_mat_bas - primeiro.qt_mat_bas)
 
         <Card.Subtitle className="mb-2 text-muted">Quantidade da materia: {item.qt_mat_bas}</Card.Subtitle>
          <Card.Subtitle className="mb-2 text-muted">Codigo da UF: {item.co_uf}</Card.Subtitle>
+         
 
       </Card.Body>
 
+
+      
+
     </Card>
 
-        )) }
 
-    </div>
+
+
+    
+
+        )) }
+   </Container>
 
 
     
